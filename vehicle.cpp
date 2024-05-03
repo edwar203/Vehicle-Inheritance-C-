@@ -26,6 +26,15 @@ public:
 
 class Delorean : public Vehicle
 {
+private:
+    int year;
+
+public:
+    Delorean(std::string make, std::string model, int year);
+    int getYear();
+    void setYear(int year);
+    void start();
+    void stop();
 };
 
 // Main function
