@@ -51,11 +51,24 @@ private:
     int year;
 
 public:
-    Delorean(std::string make, std::string model, int year);
-    int getYear();
-    void setYear(int year);
-    void start();
-    void stop();
+    Delorean(std::string make, std::string model, int year) : Vehicle(make, model), year(year) {}
+    int Delorean::getYear()
+    {
+        return year;
+    }
+    void Delorean::setYear(int year)
+    {
+        this->year = year;
+    }
+    void Delorean::start()
+    {
+        std::cout << "Activating time circuits... Flux Capacitors online!" << std::endl;
+        std::cout << "Preparing to travel back in time with the " << getMake() << " " << getModel() << " of year " << year << "..." << std::endl;
+    }
+    void stop()
+    {
+        std::cout << "Disabling time circuits... Back to the present!" << std::endl;
+    }
 };
 
 // Main function
