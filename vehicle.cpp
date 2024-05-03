@@ -16,12 +16,33 @@ private:
 
 public:
     Vehicle(std::string make, std::string model);
-    std::string getMake();
-    void setMake(std::string make);
-    std::string getModel();
-    void setModel(std::string model);
-    void start();
-    void stop();
+    std::string Vehicle::getMake()
+    {
+        return make;
+    }
+
+    void Vehicle::setMake(std::string make)
+    {
+        this->make = make;
+    }
+
+    std::string Vehicle::getModel()
+    {
+        return model;
+    }
+
+    void Vehicle::setModel(std::string model)
+    {
+        this->model = model;
+    }
+    void Vehicle::start()
+    {
+        std::cout << "Starting the " << make << " " << model << std::endl;
+    }
+    void stop()
+    {
+        std::cout << "Stopping the " << make << " " << model << std::endl;
+    }
 };
 
 class Delorean : public Vehicle
