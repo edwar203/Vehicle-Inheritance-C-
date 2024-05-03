@@ -73,6 +73,7 @@ public:
 
 class Herbie : public Vehicle
 {
+    Herbie() : Vehicle("Volkswagon", "Beetle") {}
 };
 
 // Main function
