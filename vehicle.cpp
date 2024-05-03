@@ -71,6 +71,10 @@ public:
     }
 };
 
+class Herbie : public Vehicle
+{
+};
+
 // Main function
 int main()
 {
