@@ -74,6 +74,9 @@ public:
 // Main function
 int main()
 {
+    Delorean delorean("Delorean", "DMC-12", 1985);
+    delorean.start();
+    delorean.stop();
 
     return 0;
 }
