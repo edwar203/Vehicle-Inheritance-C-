@@ -74,6 +74,16 @@ public:
 class Herbie : public Vehicle
 {
     Herbie() : Vehicle("Volkswagon", "Beetle") {}
+
+    void start() override
+    {
+        std::cout << "Herbie, the Love Bug, starts to drive..." << std::endl;
+    }
+
+    void stop() override
+    {
+        std::cout << "Herbie, the Love Bug, comes to a stop." << std::endl;
+    }
 };
 
 // Main function
@@ -82,6 +92,10 @@ int main()
     Delorean delorean("Delorean", "DMC-12", 1985);
     delorean.start();
     delorean.stop();
+
+    Herbie herbie;
+    herbie.start();
+    herbie.stop();
 
     return 0;
 }
